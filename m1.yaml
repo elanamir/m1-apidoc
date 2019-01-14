@@ -1,0 +1,87 @@
+swagger: "2.0"
+info:
+  description: "The M1 public API"
+  version: "1.0.0"
+  title: "MeasureOne API"
+  termsOfService: "http://measureone.com/terms/"
+  contact:
+    email: "api@measureone.com"
+  license:
+    name: "Apache 2.0"
+    url: "http://www.apache.org/licenses/LICENSE-2.0.html"
+host: "api.measureone.com"
+basePath: "/v1"
+schemes:
+- "https"
+paths:
+  /transcripts/create:
+    post:
+      parameters:
+      - name: "student_id"
+        required: "true"
+      responses:
+        200: 
+          description: "success"
+          schema:
+            type: "object"
+            properties:
+              transcript_id:
+                type: "string"
+                description: "ID of newly created transcript"
+  /transcripts/update:
+    post:
+    responses:
+      200: 
+        description: "success"
+    post:
+  /transcripts/delete:
+    post:
+  /transcripts/get_by_id:
+    post:
+  /transcripts/webhook:
+    post:
+  /instantscores:
+    post:
+  /instantscores/get:
+    post:
+  /students/create:
+    post:
+  /students/get_by_id:
+    post:
+  /students/update:
+    post:
+  /students/delete:
+    post:
+  /meritscores/score:
+    post:
+  /meritscores/verify:
+    post:
+  /reports/get:
+    post:
+  /reports/get_by_id:
+    post:
+definitions:
+  Transcript: 
+    type: "object"
+    properties:
+      id: 
+        type: "string"
+        description: "transcript id"
+      student_id:
+        type: "string"
+        description: "student id for this transcript"
+      school_id:
+        type: "string"
+        description: "school id for this transcript"
+      source: 
+        $ref: "#/definitions/TranscriptSource"
+  TranscriptSource:
+    type: "object"
+    properties:
+      type: "string"
+        enum:
+          - "pdf"
+          - "jpeg"
+          - "png"
+      data: "string"
+      description: "uuencoded source data"
