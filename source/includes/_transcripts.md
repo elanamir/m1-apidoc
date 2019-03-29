@@ -4,3 +4,4 @@ The Transcript resource provides the core functionality for accessing the Measur
 
 ### Transcript Creation
 `POST /transcripts/new`
+
