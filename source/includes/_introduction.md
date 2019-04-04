@@ -1,6 +1,6 @@
 # Overview
 
-Welcome to the MeasureOne API!   Our API provides a modern, developer-friendly RESTful interface to the MeasureOne platform.   Our focus is on simplicity, predictability, and consistency of behavior so that you the developer can easily integrate our capabilities into your application.    
+Welcome to the MeasureOne API!   Our API provides a modern, developer-friendly RESTful interface to the MeasureOne platform.   Our focus is on simplicity, predictability, and consistency of behavior so that you the developer can easily integrate our capabilities into your application.     
 
 
 ## Authentication
