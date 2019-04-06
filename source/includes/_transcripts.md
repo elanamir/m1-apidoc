@@ -5,3 +5,13 @@ The Transcript resource provides the core functionality for accessing the Measur
 ### Transcript Creation
 `POST /transcripts/new`
 
+### Transcript Update
+`POST /transcripts/update`
+
+### Transcript Retrieve All
+`POST /transcripts/get`
+
+### Transcript Retrieve by ID
+`POST /trancripts/get_by_id`
+
+
